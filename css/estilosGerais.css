@@ -1,0 +1,16 @@
+@import url('/css/conteudo.css');
+
+:root {
+    --tituloBranco: #fff; 
+    --azulEscuro: #1B1D31;
+    --azulClaro: #212442;
+    --cinzaClaro: #F1F1F1;
+    --cinza: #A8ABB2;
+    --preto: #000000;
+}
+
+body {
+    font-family: Helvetica;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}

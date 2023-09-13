@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7DaysOfCode Challenge</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilosGerais.css">
+
+</head>
+
+<body>
+    <div class="aviso">
+        <h2 class="aviso_titulo">Data inválida</h2>
+        <p class="aviso_descricao">Insira um ano válido no campo </p>
+        <i class="aviso_icone"><img src="imgs/erro.svg" alt=""></i>
+    </div>
+    <main class="conteudo">
+        <div class="formulario">
+            <div class="conteudo_formulario">
+                <h1 class="titulo_formulario" data-tituloFormulario>AniverTop</h1>
+                <a href="https://www.linkedin.com/in/caio-colli-75a431240/" target="_blank"><img
+                        src="imgs/linkedin.png" alt="" class="link_img"></a>
+                <a href="https://github.com/CaioColli" target="_blank"><img src="imgs/github.png" alt=""
+                        class="link_img"></a>
+                <p class="descricao_formulario" data-descricaoFormulario>Insira o aniversário de seus conhecidos</p>
+                <form class="inputs_formulario" data-formulario>
+                    <label for="nome">
+                        <input type="text" name="nome" class="nome" placeholder="Nome" required minlength="3"
+                            data-nomeFormulario>
+                    </label>
+                    <label for="dataAniversario">
+                        <input type="date" name="data" class="data" data-dataFormulario required>
+                    </label>
+
+                    <div class="inputs_radio">
+                        <h2 class="pergunta_radio">Você tem algum presente em mente?</h2>
+                        <div class="display_label">
+                            <label for="sim" class="label_sim">Sim
+                                <input type="radio" name="opcao_input" id="sim" data-radioSim required>
+                                <div class="inputRadio_personalizado">
+                                    <span data-interiorRadioSim></span>
+                                </div>
+                            </label>
+                            <label for="nao" class="label_nao">Não
+                                <input type="radio" name="opcao_input" id="nao" data-radioNao required>
+                                <div class="inputRadio_personalizado">
+                                    <span data-interiorRadioNao></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <label for="presente">
+                        <input type="text" name="presente" class="presente" placeholder="Diga-nos o presente"
+                            data-presenteFormulario>
+                    </label>
+
+                    <label for="inserir">
+                        <input type="submit" name="inserir" class="inserir" data-inserir>
+                    </label>
+                </form>
+            </div>
+        </div>
+
+        <div class="aniversariantes">
+            <ul class="lista_aniversariantes">
+                <li class="aniversariante" data-aniversariante>
+                    
+                    <span class="data_aniversariante"></span>
+
+                    <i class="iconeErro" data-iconeMensagemErro></i>
+                    
+                    <i class="IconePresente" data-iconePresente></i>
+
+                    <span class="presente_aniversariante"></span>
+
+                    <button data-iconeLixeira></button></li>
+            </ul>
+        </div>
+    </main>
+    <script src="script/funcionalidades.js"></script>
+    <script src="script/localStorage.js"></script>
+</body>
+
+</html>

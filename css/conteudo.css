@@ -1,0 +1,218 @@
+.conteudo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15.625rem;
+}
+
+.conteudo_formulario {
+    color: var(--azulEscuro);
+    text-align: center;
+}
+
+.titulo_formulario {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.link_img {
+    width: 2.1875rem;
+    padding: 0.5rem;
+}
+
+.descricao_formulario {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.inputs_formulario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.data, .presente, .nome {
+    border-radius: 1.25rem;
+    background-color: var(--cinzaClaro);
+    border: .0625rem solid var(--azulEscuro);
+    color: var(--preto);
+    height: 3.125rem;
+    width: 31.25rem;
+    padding: 0 1rem;
+}
+
+.nome, .data {
+    margin-bottom: 1rem;
+}
+
+.nome::placeholder, .presente::placeholder {
+    color: var(--preto);
+}
+
+.data {
+    cursor: pointer;
+}
+
+.inputs_radio {
+    align-items: center;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.pergunta_radio {
+    font-size: 1.2rem;
+}
+
+.display_label {
+    display: flex;
+}
+
+.label_sim, .label_nao {
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+[data-radioSim], [data-radioNao] {
+    display: none;
+}
+
+.inputRadio_personalizado {
+    align-items: center;
+    border-radius: 1.5625rem;
+    border: .0625rem solid var(--azulEscuro);
+    cursor: pointer;
+    display: flex;
+    height: 1.5rem;
+    justify-content: center;
+    margin: 0 .3rem;
+    width: 1.5rem;
+}
+
+[data-interiorRadioSim], [data-interiorRadioNao] {
+    border-radius: 1.5625rem;
+    background-color: var(--azulEscuro);
+    content: '';
+    display: none;
+    height: .8rem;
+    width: .8rem;
+}
+
+.presente {
+    width: 15.625rem;
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.inserir {
+    background-color: var(--azulEscuro);
+    border-radius: 1.25rem;
+    color: var(--tituloBranco);
+    cursor: pointer;
+    height: 3.125rem;
+    opacity: 0.5;
+    pointer-events: none;
+    width: 17.1875rem;
+}
+
+.lista_aniversariantes {
+    display: flex;  
+    flex-direction: column;
+}
+
+.aniversariante {
+    background-color: var(--azulEscuro);
+    border: 2px solid var(--tituloBranco);
+    border-radius: 1.25rem;
+    color: var(--tituloBranco);
+    margin-top: 1rem;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.iconeErro {
+    cursor: help;
+}
+
+
+.botaoDescartarItem {
+    cursor: pointer;
+}
+
+.iconeErro,
+.IconePresente,
+.botaoDescartarItem {
+    width: 1.5625rem;
+}
+
+.aviso {
+    align-items: center;
+    background-color: rgba(73, 88, 104, 0.13);
+    border-radius: .9375rem;
+    color: var(--tituloBranco);
+    display: flex;
+    display: none;
+    flex-direction: column;
+    height: 5rem;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    animation: deslizar 1s linear;
+}
+
+@keyframes deslizar {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 15%;
+    }
+}
+
+.aviso_titulo {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.aviso_titulo, .aviso_descricao, .aviso_icone{
+    margin-bottom: 0.5rem; 
+}
+
+@media screen and (max-width: 420px) {
+    .titulo_formulario {
+        font-size: 2.5rem;
+    }
+
+    .link_img {
+        width: 2rem;
+    }
+
+    .descricao_formulario {
+        font-size: 1.2rem;
+    }
+
+    .data, .presente, .nome {
+        width: 20rem;
+    }
+
+    .inputs_radio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .display_label {
+        display: flex;
+        margin-top: 1rem;
+    }
+}
+
