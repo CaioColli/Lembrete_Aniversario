@@ -24,3 +24,9 @@
 
 + Para apagar um dado inserido basta clicar no botão de leixeira
 + ![image](https://github.com/CaioColli/Lembrete_Aniversario/assets/110783734/3673b165-0efa-4c42-b8b4-46ba83976a36)
+
+
+# Deploy 
+- https://lembrete-aniversario-gamma.vercel.app/
+
+![image](https://github.com/CaioColli/Lembrete_Aniversario/assets/110783734/03359ceb-8b60-4c9c-9186-b36b6dde1f33)
