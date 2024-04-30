@@ -1,6 +1,6 @@
 # Lembrete-Aniversario
 
-## Projeto desenvolvido para aprimorar minhas habilidades em JavaScript em armazenamento no localStorage e na  manipulação, além da criação de elementos na tela com os valores inseridos nos inputs do osuário.
+## Projeto desenvolvido para aprimorar minhas habilidades em JavaScript em armazenamento no localStorage e na  manipulação, além da criação de elementos na tela com os valores inseridos nos inputs do usuário.
 
 ### Tecnologias usadas 
 
